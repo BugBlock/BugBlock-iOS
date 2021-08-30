@@ -221,6 +221,7 @@
 		CB2A99B326DCB83D00FE10D9 /* DescriptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2A99B226DCB83C00FE10D9 /* DescriptionVC.xib */; };
 		CB2A99B526DCB84500FE10D9 /* ScreenshotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2A99B426DCB84500FE10D9 /* ScreenshotVC.xib */; };
 		CB2A99B726DCB86600FE10D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2A99B626DCB86600FE10D9 /* Assets.xcassets */; };
+		CBE1292826DD755300F57773 /* BugBlock.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CBE1292726DD755300F57773 /* BugBlock.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -451,6 +452,7 @@
 		CB2A99B226DCB83C00FE10D9 /* DescriptionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionVC.xib; sourceTree = "<group>"; };
 		CB2A99B426DCB84500FE10D9 /* ScreenshotVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenshotVC.xib; sourceTree = "<group>"; };
 		CB2A99B626DCB86600FE10D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBE1292726DD755300F57773 /* BugBlock.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BugBlock.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +477,7 @@
 		CB2A97C126DC237000FE10D9 = {
 			isa = PBXGroup;
 			children = (
+				CBE1292A26DD75AE00F57773 /* Podspec Metadata */,
 				CB2A97CD26DC237000FE10D9 /* BugBlock */,
 				CB2A97D826DC237000FE10D9 /* BugBlockTests */,
 				CB2A97CC26DC237000FE10D9 /* Products */,
@@ -943,6 +946,14 @@
 			path = Basic;
 			sourceTree = "<group>";
 		};
+		CBE1292A26DD75AE00F57773 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				CBE1292726DD755300F57773 /* BugBlock.podspec */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1143,6 +1154,7 @@
 				CB2A999026DC238800FE10D9 /* DemangleNodes.def in Resources */,
 				CB2A99B726DCB86600FE10D9 /* Assets.xcassets in Resources */,
 				CB2A998026DC238800FE10D9 /* LICENSE.TXT in Resources */,
+				CBE1292826DD755300F57773 /* BugBlock.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
