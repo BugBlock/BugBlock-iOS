@@ -19,7 +19,7 @@ jobs:
       - name: Artifact
         uses: actions/upload-artifact@v1
         with:
-          name: BugBlock.xcframework
+          name: BugBlock.xcframework.zip
           path: build
       - name: Release
         id: create_release
@@ -37,6 +37,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: ./build/BugBlock.xcframework
-          asset_name: BugBlock.xcframework
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./build/BugBlock.xcframework.zip
+          asset_name: BugBlock.xcframework.zip
+          asset_content_type: application/zip
