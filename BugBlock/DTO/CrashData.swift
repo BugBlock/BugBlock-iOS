@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CrashData {
+struct CrashData: Codable {
     var metadata: Metadata?
     var log: String?
 }

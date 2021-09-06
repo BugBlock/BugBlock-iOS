@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ApiServiceProtocol {
-    func report(crash: CrashData, completionHandler: @escaping (VoidResult<ApiError>) -> Void)
+    func report(crash: CrashData, completionHandler: @escaping (Result<IssueResponse, ApiError>) -> Void)
     func report(issue: Issue, completionHandler: @escaping (Result<IssueResponse, ApiError>) -> Void)
     func image(issueId: Int, image: Data, completionHandler: @escaping (VoidResult<ApiError>) -> Void)
 }
@@ -16,9 +16,15 @@ protocol ApiServiceProtocol {
 class ApiService: ApiServiceProtocol {
     private let session = URLSession(configuration: URLSessionConfiguration.default)
     
-    func report(crash: CrashData, completionHandler: @escaping (VoidResult<ApiError>) -> Void) {
-        
-        completionHandler(.failure(ApiError(error: "test")))
+    func report(crash: CrashData, completionHandler: @escaping (Result<IssueResponse, ApiError>) -> Void) {
+        let builder = RequestBuilder(url: "https://api.bugblock.io/reporter/crash", body: crash, method: "POST")
+        do {
+            let request = try builder.build()
+            let task = session.dataTask(with: request, completionHandler: completionHandler)
+            task.resume()
+        } catch {
+            completionHandler(.failure(ApiError(error: "request not valid")))
+        }
     }
     
     func report(issue: Issue, completionHandler: @escaping (Result<IssueResponse, ApiError>) -> Void) {
