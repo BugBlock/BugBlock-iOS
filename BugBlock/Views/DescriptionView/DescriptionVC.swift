@@ -52,7 +52,7 @@ class DescriptionVC: UIViewController {
     }
 
     @IBAction func send(_ sender: Any) {
-        self.reporter.report()
+        self.reporter.report(image: image)
     }
 }
 

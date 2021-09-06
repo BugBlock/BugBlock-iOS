@@ -8,5 +8,5 @@
 import Foundation
 
 struct ApiError: Error, Codable {
-    let message: String?
+    let error: String?
 }

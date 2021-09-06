@@ -36,4 +36,33 @@ class RequestBuilder<T: Codable> {
         
         return request
     }
+    
+    
+    func build(with image: Data) throws -> URLRequest {
+        guard let url = URL(string: url) else {
+            throw RequestBuilderError.url
+        }
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = method
+        
+        let boundary = UUID().uuidString
+        
+        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+        
+        var data = Data()
+        let paramName = "image"
+        let fileName = "image.png"
+        // Add the image data to the raw http request data
+        data.append("\r\n--\(boundary)\r\n".data(using: .utf8)!)
+        data.append("Content-Disposition: form-data; name=\"\(paramName)\"; filename=\"\(fileName)\"\r\n".data(using: .utf8)!)
+        data.append("Content-Type: image/png\r\n\r\n".data(using: .utf8)!)
+        data.append(image)
+        
+        data.append("\r\n--\(boundary)--\r\n".data(using: .utf8)!)
+        
+        request.httpBody = data
+        
+        return request
+    }
 }

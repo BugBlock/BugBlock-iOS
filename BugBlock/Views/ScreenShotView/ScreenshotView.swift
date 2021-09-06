@@ -46,8 +46,8 @@ class ScreenshotView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.imageView?.layer.borderWidth = 1
-        self.imageView?.layer.borderColor = UIColor.systemBlue.cgColor
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.systemBlue.cgColor
     }
     
     @objc private func gesture(_ gesture: UIPanGestureRecognizer) {
@@ -69,7 +69,7 @@ class ScreenshotView: UIView {
         let point = event?.allTouches?.first?.location(in: self)
         path = UIBezierPath()
         line = CAShapeLayer()
-        self.layer.addSublayer(line)
+        imageView?.layer.addSublayer(line)
         lines.append(line)
         prevPoint = point
         removedLines.removeAll()
@@ -83,7 +83,6 @@ class ScreenshotView: UIView {
         return removedLines.count > 0
     }
     
-    
     func undo() {
         if canUndo() {
             removedLines.append(lines.last!)
@@ -95,7 +94,7 @@ class ScreenshotView: UIView {
     func redo() {
         if let line = removedLines.last {
             lines.append(line)
-            self.layer.addSublayer(line)
+            imageView?.layer.addSublayer(line)
             removedLines.removeLast()
         }
     }

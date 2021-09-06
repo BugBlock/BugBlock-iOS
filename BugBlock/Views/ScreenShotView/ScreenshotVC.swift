@@ -76,9 +76,12 @@ class ScreenshotVC: UIViewController, ScreenshotViewDelegate {
     }
     
     @IBAction func addDescription(_ sender: Any) {
-        UIGraphicsBeginImageContextWithOptions(self.screenshotView.frame.size, true, 0)
+        guard let size = self.screenshotView.imageView?.frame.size else {
+            return
+        }
+        UIGraphicsBeginImageContextWithOptions(size, true, 0)
         guard let context = UIGraphicsGetCurrentContext() else { return }
-        self.screenshotView.layer.render(in: context)
+        self.screenshotView.imageView?.layer.render(in: context)
         guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return }
         UIGraphicsEndImageContext()
         let descriptionVC = DescriptionVC(reporter: reporter)

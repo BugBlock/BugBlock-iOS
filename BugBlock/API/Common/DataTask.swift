@@ -15,7 +15,7 @@ extension URLSession {
             do {
                 completionHandler(try parser.parseVoid())
             } catch {
-                completionHandler(.failure(ApiError(message: error.localizedDescription) as! E))
+                completionHandler(.failure(ApiError(error: error.localizedDescription) as! E))
             }
         }
     }
@@ -26,7 +26,7 @@ extension URLSession {
             do {
                 completionHandler(try parser.parse())
             } catch {
-                completionHandler(.failure(ApiError(message: error.localizedDescription) as! E))
+                completionHandler(.failure(ApiError(error: error.localizedDescription) as! E))
             }
         }
     }
@@ -37,7 +37,7 @@ extension URLSession {
             do {
                 completionHandler(try parser.parseArray())
             } catch {
-                completionHandler(.failure(ApiError(message: error.localizedDescription) as! E))
+                completionHandler(.failure(ApiError(error: error.localizedDescription) as! E))
             }
         }
     }

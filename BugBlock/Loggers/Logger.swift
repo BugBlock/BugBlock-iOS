@@ -54,7 +54,7 @@ public class Logger: LoggerProtocol {
     
     func report() {
         self.bugReporter?.delegate = self
-        self.bugReporter?.report()
+//        self.bugReporter?.report()
     }
 }
 

@@ -26,13 +26,5 @@ struct Issue: Codable {
 }
 
 struct IssueResponse: Codable {
-    var data: IssueData
-    
-    
-    struct IssueData: Codable {
-        var id: Int = 0
-        enum CodingKeys: String, CodingKey {
-            case id = "id"
-        }
-    }
+    var id: Int = 0
 }

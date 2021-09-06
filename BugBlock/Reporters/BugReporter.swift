@@ -6,12 +6,12 @@
 //
 
 import Foundation
-
+import UIKit
 
 protocol BugReporterProtocol {
     init(apiService: ApiServiceProtocol?, storage: LogStorageProtocol?)
     var delegate: BugReporterDelegate? {get set}
-    func report()
+    func report(image: UIImage?)
 }
 
 protocol BugReporterDelegate {
@@ -28,17 +28,28 @@ class BugReporter: BugReporterProtocol {
         self.storage = storage
     }
     
-    func report() {
+    func report(image: UIImage?) {
         let bugData = Issue(metadata: Metadata(), networkLogs: self.storage?.networkLog, consoleLogs: self.storage?.consoleLog)
-        self.apiService?.report(issue: bugData, completionHandler: { [weak self] error in
-            switch error {
+        self.apiService?.report(issue: bugData, completionHandler: { [weak self] result in
+            switch result {
             case let .success(issueResponse):
-                print(issueResponse.data.id)
+                print(issueResponse.id)
                 self?.storage?.clean()
-                self?.delegate?.bugReported()
+                if let image = image {
+                    self?.uploadImage(issueId: issueResponse.id, image: image)
+                } else {
+                    self?.delegate?.bugReported()
+                }
             case let .failure(apiError):
                 print(apiError)
             }
+        })
+    }
+    
+    private func uploadImage(issueId: Int, image: UIImage) {
+        self.apiService?.image(issueId: issueId, image: image.pngData()!, completionHandler: { [weak self] result in
+            print(result)
+            self?.delegate?.bugReported()
         })
     }
 }
