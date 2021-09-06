@@ -18,8 +18,10 @@ class ScreenshotVC: UIViewController, ScreenshotViewDelegate {
     @IBOutlet weak var actions: UIStackView!
     
     private let colorsArray: [UIColor] = [.systemRed, .systemOrange, .systemGreen, .systemBlue, .darkGray]
+    private let reporter: BugReporterProtocol
     
-    public init() {
+    public init(reporter: BugReporterProtocol) {
+        self.reporter = reporter
         super.init(nibName: "ScreenshotVC", bundle: Bundle(for: ScreenshotVC.self))
     }
     
@@ -30,8 +32,8 @@ class ScreenshotVC: UIViewController, ScreenshotViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Report a bug"
-//        self.screenshotView.delegate = self
-//        self.screenshotView.imageView?.image = image
+        self.screenshotView.delegate = self
+        self.screenshotView.imageView?.image = image
     }
     
     func canUndo(can: Bool) {
@@ -79,7 +81,7 @@ class ScreenshotVC: UIViewController, ScreenshotViewDelegate {
         self.screenshotView.layer.render(in: context)
         guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return }
         UIGraphicsEndImageContext()
-        let descriptionVC = DescriptionVC()
+        let descriptionVC = DescriptionVC(reporter: reporter)
         descriptionVC.image = image
         self.navigationController?.pushViewController(descriptionVC, animated: true)
     }

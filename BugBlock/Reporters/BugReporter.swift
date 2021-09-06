@@ -29,10 +29,16 @@ class BugReporter: BugReporterProtocol {
     }
     
     func report() {
-        let bugData = BugData(metadata: Metadata(), networkLogs: self.storage?.networkLog, consoleLogs: self.storage?.consoleLog)
-        self.apiService?.report(bug: bugData, completionHandler: { [weak self] error in
-            self?.storage?.clean()
-            self?.delegate?.bugReported()
+        let bugData = Issue(metadata: Metadata(), networkLogs: self.storage?.networkLog, consoleLogs: self.storage?.consoleLog)
+        self.apiService?.report(issue: bugData, completionHandler: { [weak self] error in
+            switch error {
+            case let .success(issueResponse):
+                print(issueResponse.data.id)
+                self?.storage?.clean()
+                self?.delegate?.bugReported()
+            case let .failure(apiError):
+                print(apiError)
+            }
         })
     }
 }

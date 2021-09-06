@@ -12,9 +12,13 @@ class DescriptionVC: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var screenshotImageView: UIImageView!
     var image: UIImage?
+    private var reporter: BugReporterProtocol
     
-    public init() {
+    
+    public init(reporter: BugReporterProtocol) {
+        self.reporter = reporter
         super.init(nibName: "DescriptionVC", bundle: Bundle(for: DescriptionVC.self))
+        self.reporter.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -48,5 +52,15 @@ class DescriptionVC: UIViewController {
     }
 
     @IBAction func send(_ sender: Any) {
+        self.reporter.report()
+    }
+}
+
+extension DescriptionVC: BugReporterDelegate {
+    func bugReported() {
+        print("Bug reported")
+        DispatchQueue.main.async { [weak self] in
+            self?.dismiss(animated: true, completion: nil)
+        }
     }
 }

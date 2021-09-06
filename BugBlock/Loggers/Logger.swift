@@ -8,7 +8,6 @@
 import Foundation
 
 protocol LoggerProtocol {
-    var handler: ScreenshotHandler {get}
     init(appId: String, configuration: BBConfiguration)
     func log<T: Codable>(data: T)
     func report()
@@ -23,7 +22,7 @@ public class Logger: LoggerProtocol {
     private var bugReporter: BugReporterProtocol?
     
     private var listener: ScreenshotListenerProtocol?
-    var handler = ScreenshotHandler()
+    private var handler: ScreenshotHandler?
     private var appId: String?
     
     required init(appId: String, configuration: BBConfiguration) {
@@ -42,10 +41,9 @@ public class Logger: LoggerProtocol {
             crashReporter.registerHandler()
         }
         self.bugReporter = BugReporter(apiService: apiService, storage: storage)
-        self.bugReporter?.delegate = self
         
-        
-        self.listener = ScreenshotListener(handler: handler)
+        self.handler = ScreenshotHandler(reporter: bugReporter!)
+        self.listener = ScreenshotListener(handler: handler!)
         self.listener?.startListen()
     }
     
@@ -55,6 +53,7 @@ public class Logger: LoggerProtocol {
     }
     
     func report() {
+        self.bugReporter?.delegate = self
         self.bugReporter?.report()
     }
 }

@@ -35,7 +35,7 @@
 		CB2A98E826DC238800FE10D9 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A980826DC238800FE10D9 /* ApiError.swift */; };
 		CB2A98E926DC238800FE10D9 /* ConsoleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A980926DC238800FE10D9 /* ConsoleData.swift */; };
 		CB2A98EA26DC238800FE10D9 /* NetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A980A26DC238800FE10D9 /* NetworkData.swift */; };
-		CB2A98EB26DC238800FE10D9 /* BugData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A980B26DC238800FE10D9 /* BugData.swift */; };
+		CB2A98EB26DC238800FE10D9 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A980B26DC238800FE10D9 /* Issue.swift */; };
 		CB2A98EC26DC238800FE10D9 /* CrashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A980C26DC238800FE10D9 /* CrashData.swift */; };
 		CB2A98ED26DC238800FE10D9 /* KSCrashReportFilterAppleFmt.h in Headers */ = {isa = PBXBuildFile; fileRef = CB2A981026DC238800FE10D9 /* KSCrashReportFilterAppleFmt.h */; };
 		CB2A98EE26DC238800FE10D9 /* Container+DeepSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2A981226DC238800FE10D9 /* Container+DeepSearch.m */; };
@@ -266,7 +266,7 @@
 		CB2A980826DC238800FE10D9 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		CB2A980926DC238800FE10D9 /* ConsoleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleData.swift; sourceTree = "<group>"; };
 		CB2A980A26DC238800FE10D9 /* NetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkData.swift; sourceTree = "<group>"; };
-		CB2A980B26DC238800FE10D9 /* BugData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugData.swift; sourceTree = "<group>"; };
+		CB2A980B26DC238800FE10D9 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		CB2A980C26DC238800FE10D9 /* CrashData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashData.swift; sourceTree = "<group>"; };
 		CB2A981026DC238800FE10D9 /* KSCrashReportFilterAppleFmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCrashReportFilterAppleFmt.h; sourceTree = "<group>"; };
 		CB2A981226DC238800FE10D9 /* Container+DeepSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Container+DeepSearch.m"; sourceTree = "<group>"; };
@@ -633,7 +633,7 @@
 				CB2A980826DC238800FE10D9 /* ApiError.swift */,
 				CB2A980926DC238800FE10D9 /* ConsoleData.swift */,
 				CB2A980A26DC238800FE10D9 /* NetworkData.swift */,
-				CB2A980B26DC238800FE10D9 /* BugData.swift */,
+				CB2A980B26DC238800FE10D9 /* Issue.swift */,
 				CB2A980C26DC238800FE10D9 /* CrashData.swift */,
 			);
 			path = DTO;
@@ -1187,7 +1187,7 @@
 				CB2A992D26DC238800FE10D9 /* KSCxaThrowSwapper.c in Sources */,
 				CB2A98D526DC238800FE10D9 /* NetworkLogger.swift in Sources */,
 				CB2A991626DC238800FE10D9 /* KSCrashMonitor_System.m in Sources */,
-				CB2A98EB26DC238800FE10D9 /* BugData.swift in Sources */,
+				CB2A98EB26DC238800FE10D9 /* Issue.swift in Sources */,
 				CB2A98DE26DC238800FE10D9 /* DescriptionVC.swift in Sources */,
 				CB2A98F926DC238800FE10D9 /* KSCrashReportFilterAppleFmt.m in Sources */,
 				CB2A994E26DC238800FE10D9 /* KSString.c in Sources */,

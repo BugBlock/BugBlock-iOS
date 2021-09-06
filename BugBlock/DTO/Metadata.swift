@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Metadata {
+struct Metadata: Codable {
     var osType: String?
     var osVersion: String?
     var appVersion: String?

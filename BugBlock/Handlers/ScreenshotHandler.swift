@@ -8,10 +8,17 @@
 import UIKit
 
 protocol ScreenshotHandlerProtocol {
+    init(reporter: BugReporterProtocol)
     func handleScreenshot()
 }
 
 class ScreenshotHandler: ScreenshotHandlerProtocol {
+    private let reporter: BugReporterProtocol
+    
+    required init(reporter: BugReporterProtocol) {
+        self.reporter = reporter
+    }
+    
     func handleScreenshot() {
         guard let vc = UIApplication.shared.windows.first?.visibleViewController else {
             return
@@ -22,11 +29,10 @@ class ScreenshotHandler: ScreenshotHandlerProtocol {
         guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return }
         UIGraphicsEndImageContext()
         presentVC(image: image)
-//        self.screenshotView.imageView?.image = image
     }
     
     private func presentVC(image: UIImage) {
-        let vc = ScreenshotVC()
+        let vc = ScreenshotVC(reporter: reporter)
         vc.image = image
         guard let visibleVC = UIApplication.shared.windows.first?.visibleViewController else {
             return
