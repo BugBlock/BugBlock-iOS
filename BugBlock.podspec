@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author       = { "Vadym Kozak" => "" }
   s.platform     = :ios
-  s.source       = { :http => 'https://github.com/BugBlock/BugBlock-iOS/releases/download/0.0.7-alpha/BugBlock.xcframework.zip' }
+  s.source       = { :http => 'https://github.com/BugBlock/BugBlock-iOS/releases/download/0.0.8-alpha/BugBlock.xcframework.zip' }
   s.ios.deployment_target = '9.2'
   s.ios.vendored_frameworks = 'BugBlock.xcframework'
 end
