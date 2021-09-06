@@ -24,6 +24,6 @@ xcodebuild -create-xcframework \
 
 cd build
 zip -r BugBlock.xcframework.zip BugBlock.xcframework
-rm -r ./build/BugBlock.xcframework
-rm -r ./build/BugBlock.framework-iphonesimulator.xcarchive
-rm -r ./build/BugBlock.framework-iphoneos.xcarchive
+rm -r BugBlock.xcframework
+rm -r BugBlock.framework-iphonesimulator.xcarchive
+rm -r BugBlock.framework-iphoneos.xcarchive
