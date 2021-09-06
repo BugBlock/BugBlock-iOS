@@ -222,6 +222,8 @@
 		CB2A99B526DCB84500FE10D9 /* ScreenshotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2A99B426DCB84500FE10D9 /* ScreenshotVC.xib */; };
 		CB2A99B726DCB86600FE10D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2A99B626DCB86600FE10D9 /* Assets.xcassets */; };
 		CBE1292826DD755300F57773 /* BugBlock.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CBE1292726DD755300F57773 /* BugBlock.podspec */; };
+		CBEBD22C26E6A10B00D768E0 /* UIDevice+Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBD22B26E6A10B00D768E0 /* UIDevice+Device.swift */; };
+		CBEBD22E26E6A60000D768E0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBD22D26E6A60000D768E0 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -453,6 +455,8 @@
 		CB2A99B426DCB84500FE10D9 /* ScreenshotVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenshotVC.xib; sourceTree = "<group>"; };
 		CB2A99B626DCB86600FE10D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBE1292726DD755300F57773 /* BugBlock.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BugBlock.podspec; sourceTree = "<group>"; };
+		CBEBD22B26E6A10B00D768E0 /* UIDevice+Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Device.swift"; sourceTree = "<group>"; };
+		CBEBD22D26E6A60000D768E0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -606,6 +610,8 @@
 				CB2A97FF26DC238800FE10D9 /* URLRequest+Request.swift */,
 				CB2A980026DC238800FE10D9 /* UIView+View.swift */,
 				CB2A980126DC238800FE10D9 /* UIWindow+Window.swift */,
+				CBEBD22B26E6A10B00D768E0 /* UIDevice+Device.swift */,
+				CBEBD22D26E6A60000D768E0 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1205,6 +1211,7 @@
 				CB2A98E826DC238800FE10D9 /* ApiError.swift in Sources */,
 				CB2A991126DC238800FE10D9 /* KSCrash.m in Sources */,
 				CB2A98E026DC238800FE10D9 /* ScreenshotVC.swift in Sources */,
+				CBEBD22C26E6A10B00D768E0 /* UIDevice+Device.swift in Sources */,
 				CB2A98D826DC238800FE10D9 /* CrashReporter.swift in Sources */,
 				CB2A98FE26DC238800FE10D9 /* KSCrashReportFilterBasic.m in Sources */,
 				CB2A993826DC238800FE10D9 /* KSObjC.c in Sources */,
@@ -1273,6 +1280,7 @@
 				CB2A98DC26DC238800FE10D9 /* ResponseParser.swift in Sources */,
 				CB2A98FD26DC238800FE10D9 /* KSCrashReportFilterStringify.m in Sources */,
 				CB2A990426DC238800FE10D9 /* KSReachabilityKSCrash.m in Sources */,
+				CBEBD22E26E6A60000D768E0 /* String.swift in Sources */,
 				CB2A98F626DC238800FE10D9 /* KSCrashReportFilterJSON.m in Sources */,
 				CB2A998A26DC238800FE10D9 /* Demangler.cpp in Sources */,
 			);

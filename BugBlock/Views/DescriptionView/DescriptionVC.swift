@@ -45,6 +45,8 @@ class DescriptionVC: UIViewController {
         emailTextField.leftViewMode = .always
         
         self.screenshotImageView.image = image
+        
+        self.emailTextField.text = UserDefaults.standard.string(forKey: UserDefaultsKeys.userEmail.rawValue)
     }
 
     @objc func closeKeyboard() {
@@ -52,7 +54,14 @@ class DescriptionVC: UIViewController {
     }
 
     @IBAction func send(_ sender: Any) {
-        self.reporter.report(image: image)
+        self.emailTextField.layer.borderWidth = 0
+        guard let email = self.emailTextField.text, email.isValidEmail() else {
+            self.emailTextField.layer.borderWidth = 1
+            self.emailTextField.layer.borderColor = UIColor.systemRed.cgColor
+            return
+        }
+        UserDefaults.standard.setValue(self.emailTextField.text, forKey: UserDefaultsKeys.userEmail.rawValue)
+        self.reporter.report(email: email, description: self.descriptionTextView.text, image: image)
     }
 }
 
