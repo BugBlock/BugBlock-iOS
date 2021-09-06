@@ -14,6 +14,6 @@ let package = Package(
     ],
     targets: [
             .binaryTarget(name: "BugBlock",
-                          url: "https://github.com/BugBlock/BugBlock-iOS/releases/download/0.1.0/BugBlock.xcframework.zip")
+                          url: "https://github.com/BugBlock/BugBlock-iOS/releases/download/0.1.1/BugBlock.xcframework.zip")
     ]
 )
