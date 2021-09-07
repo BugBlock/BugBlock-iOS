@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		tk6bDc3zAU2rRzhx4hGEx6g+GZM=
+		J0/PzQ/4OnLEFHcygZUhFxfxAQg=
 		</data>
 		<key>BugBlock.podspec</key>
 		<data>
-		8Ko1jdBGW1Gj1oyUEqua0PaHKNU=
+		g/x1YH1E3C/kDzTe6TJIMSygRyQ=
 		</data>
 		<key>DemangleNodes.def</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>DescriptionVC.nib/objects-11.0+.nib</key>
 		<data>
-		p5DAjhrm91zKjFy49K2XTu/Wh4M=
+		j/HK5nJbOru4ngctyuEUAe5uPmI=
 		</data>
 		<key>DescriptionVC.nib/runtime.nib</key>
 		<data>
-		h9yeCdhJIe+xX/ANEqNiIt2yqrs=
+		HLQIsvLf5oeTkz8qiVwH0cVJJRY=
 		</data>
 		<key>Headers/BugBlock-Swift.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/tHWL6VaMdIb+MHbQuD+M8sPK/w=
+		klAfZxs1iMA1Y5+8gRovkkHRcMg=
 		</data>
 		<key>LICENSE.TXT</key>
 		<data>
@@ -146,11 +146,11 @@
 		</data>
 		<key>ScreenshotVC.nib/objects-11.0+.nib</key>
 		<data>
-		wPiOBGTD3B2OaJm0V3gbbDCznKE=
+		CQl0G0qhp1aABF1CUG9gPPdhJwg=
 		</data>
 		<key>ScreenshotVC.nib/runtime.nib</key>
 		<data>
-		I/6XyeEV0veLiv4LdzW3kKI7v5Q=
+		E1Mgi7slKKgsLIsjMygEcgfFHsM=
 		</data>
 		<key>StandardTypesMangling.def</key>
 		<data>
@@ -167,22 +167,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tk6bDc3zAU2rRzhx4hGEx6g+GZM=
+			J0/PzQ/4OnLEFHcygZUhFxfxAQg=
 			</data>
 			<key>hash2</key>
 			<data>
-			R1SKMu9hmnljMqLR65JAN3QzMC4cx/noapYC6dw0f9w=
+			IRd/HNhZkyb4tf13l7nyp0dS3eotpz0YEIPnyf1GXhw=
 			</data>
 		</dict>
 		<key>BugBlock.podspec</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8Ko1jdBGW1Gj1oyUEqua0PaHKNU=
+			g/x1YH1E3C/kDzTe6TJIMSygRyQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			bfnP8JHll2tmpzOEy8WPRjxpN6Ux6uxR+e6IM4sTzEI=
+			0tqD9SjIc7WaGfu/LP8oqJDjGqb3MAJdnEpGvoIGwEc=
 			</data>
 		</dict>
 		<key>DemangleNodes.def</key>
@@ -200,22 +200,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p5DAjhrm91zKjFy49K2XTu/Wh4M=
+			j/HK5nJbOru4ngctyuEUAe5uPmI=
 			</data>
 			<key>hash2</key>
 			<data>
-			yUIT/+kZXaxM+KLzhhijo47cBzgwZm1A82R1t0wwklE=
+			FFZA1HI1fb0w1Bak2okbzjsuUN15uMBzYD4JMfBFSDw=
 			</data>
 		</dict>
 		<key>DescriptionVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h9yeCdhJIe+xX/ANEqNiIt2yqrs=
+			HLQIsvLf5oeTkz8qiVwH0cVJJRY=
 			</data>
 			<key>hash2</key>
 			<data>
-			jtKu6hejEIQdLVaLTAOwYGIVBqqunqDjfvJV3dmNuJg=
+			2CHF6Zj+XrLdNVPUcfDsQ4tctSTmnmLt46SsZdlYr+8=
 			</data>
 		</dict>
 		<key>Headers/BugBlock-Swift.h</key>
@@ -541,22 +541,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wPiOBGTD3B2OaJm0V3gbbDCznKE=
+			CQl0G0qhp1aABF1CUG9gPPdhJwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			IxiFeMReLTjinsRHena0IPgEZhSKMfHKEluaH3WwtV4=
+			ivn7RGfHC25URdyll2GdbksqxRI0Ruc//cf/s5iX+UU=
 			</data>
 		</dict>
 		<key>ScreenshotVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I/6XyeEV0veLiv4LdzW3kKI7v5Q=
+			E1Mgi7slKKgsLIsjMygEcgfFHsM=
 			</data>
 			<key>hash2</key>
 			<data>
-			eiIMT0iGLTGiWenCsUZ4frYDrrF5ShS29d7CF1ImNXM=
+			4YQgE4amZjsODalDVOdpD6hRMNzu2rCn7IJfypU5lSs=
 			</data>
 		</dict>
 		<key>StandardTypesMangling.def</key>
