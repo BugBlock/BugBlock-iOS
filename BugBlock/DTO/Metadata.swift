@@ -28,6 +28,20 @@ struct Metadata: Codable {
     var userEmail: String?
     var userName: String?
     
+    enum CodingKeys: String, CodingKey {
+        case osType = "os_type"
+        case osVersion = "os_version"
+        case appVersion = "app_version"
+        case appBuild = "app_build"
+        case appPackageName = "app_package_name"
+        case deviceName = "device_name"
+        case networkType = "network_type"
+        case userUUID = "user_uuid"
+        case userEmail = "user_email"
+        case userName = "user_name"
+    }
+    
+    
     init() {
         osVersion = UIDevice.current.systemVersion
         appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String

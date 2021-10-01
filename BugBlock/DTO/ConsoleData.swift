@@ -15,4 +15,10 @@ struct ConsoleData: Codable {
     var timestamp = Date()
     var string: String?
     var logLevel: ConsoleLogLevel = .info
+    
+    enum CodingKeys: String, CodingKey {
+        case timestamp = "timestamp"
+        case string = "string"
+        case logLevel = "log_level"
+    }
 }

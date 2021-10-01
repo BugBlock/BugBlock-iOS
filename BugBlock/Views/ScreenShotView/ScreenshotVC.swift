@@ -34,6 +34,11 @@ class ScreenshotVC: UIViewController, ScreenshotViewDelegate {
         self.title = "Report a bug"
         self.screenshotView.delegate = self
         self.screenshotView.imageView?.image = image
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
+    }
+    
+    @objc func cancel() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func canUndo(can: Bool) {
@@ -71,7 +76,8 @@ class ScreenshotVC: UIViewController, ScreenshotViewDelegate {
             }
         }
         self.colors.subviews.compactMap({ $0 as? UIButton}).forEach({ $0.setImage(nil, for: .normal)})
-        sender.setImage(#imageLiteral(resourceName: "check-mark"), for: .normal)
+        let image = UIImage(named: "check-mark")
+        sender.setImage(image, for: .normal)
         screenshotView.selectedColor = colorsArray[sender.tag]
     }
     

@@ -19,6 +19,11 @@ class DescriptionVC: UIViewController {
         self.reporter = reporter
         super.init(nibName: "DescriptionVC", bundle: Bundle(for: DescriptionVC.self))
         self.reporter.delegate = self
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
+    }
+    
+    @objc func cancel() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     required init?(coder: NSCoder) {

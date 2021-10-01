@@ -19,6 +19,15 @@ struct NetworkData: Codable {
     var request: NetworkRequest
     var response: NetworkResponse
     
+    enum CodingKeys: String, CodingKey {
+        case timestamp = "timestamp"
+        case url = "url"
+        case method = "method"
+        case statusCode = "status_code"
+        case request = "request"
+        case response = "response"
+    }
+    
     init(request: URLRequest, response: URLResponse?, data: Data?) throws {
         guard let url = request.url,
               let method = request.httpMethod else {

@@ -16,6 +16,4 @@ public struct BBConfiguration {
     public var crashReportingEnabled: Bool = false
     public var invokeByScreenshot: Bool = false
     public var invokeByShake: Bool = false
-    public var userId: String = ""
-    public var userEmail: String = ""
 }
