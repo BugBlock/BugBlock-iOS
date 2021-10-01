@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		J0/PzQ/4OnLEFHcygZUhFxfxAQg=
+		2k98sDFzeZ+4wQE4t4cSqVuirns=
 		</data>
 		<key>BugBlock.podspec</key>
 		<data>
-		g/x1YH1E3C/kDzTe6TJIMSygRyQ=
+		DFnxdOKwYBRwYOcWyJH2VeL0hPw=
 		</data>
 		<key>DemangleNodes.def</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>DescriptionVC.nib/objects-11.0+.nib</key>
 		<data>
-		j/HK5nJbOru4ngctyuEUAe5uPmI=
+		ySTHNbT9FOsXBUG6fLHMjSw6gpk=
 		</data>
 		<key>DescriptionVC.nib/runtime.nib</key>
 		<data>
-		HLQIsvLf5oeTkz8qiVwH0cVJJRY=
+		0uvBNx/js7xrsRZu6qF77LWVYEs=
 		</data>
 		<key>Headers/BugBlock-Swift.h</key>
 		<data>
@@ -58,9 +58,9 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		klAfZxs1iMA1Y5+8gRovkkHRcMg=
+		GjY7HH92U1qTzmukVwYeA1A4vJY=
 		</data>
-		<key>LICENSE.TXT</key>
+		<key>LICENSE.txt</key>
 		<data>
 		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/BugBlock.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pEonGLL5dir3ExUrzv8kNpfCBaM=
+		xGO7GmU/giOGu0py4Go0w1GzwQ8=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M3//BcVIMBROWUEzYP/nbNjWBvQ=
+		YthOBiV5QK0lLrk/JibSHAZT2hQ=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Modules/BugBlock.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		pEonGLL5dir3ExUrzv8kNpfCBaM=
+		xGO7GmU/giOGu0py4Go0w1GzwQ8=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		M3//BcVIMBROWUEzYP/nbNjWBvQ=
+		YthOBiV5QK0lLrk/JibSHAZT2hQ=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>Modules/BugBlock.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XYwdfu5fpBMSGGsSV/lyA8jZmmY=
+		vhy8a1Z6XbBS/7Ob+g81/oicl2Q=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		l04nPX97BiDvilFNkkDvE+E6Kf8=
+		h4qWl2MvqlUIdZsMwzn+205zvX8=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -106,11 +106,11 @@
 		</data>
 		<key>Modules/BugBlock.swiftmodule/i386.swiftinterface</key>
 		<data>
-		XYwdfu5fpBMSGGsSV/lyA8jZmmY=
+		vhy8a1Z6XbBS/7Ob+g81/oicl2Q=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/i386.swiftmodule</key>
 		<data>
-		l04nPX97BiDvilFNkkDvE+E6Kf8=
+		h4qWl2MvqlUIdZsMwzn+205zvX8=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Modules/BugBlock.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gqJEonNjvQySg2wA7YUPe9Jea88=
+		+J3sB0vH+pLjo2Twfv+TVIx0oR4=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vvpyswFUsqAjqEgJxhslC4j0xEU=
+		HelqOJAKk5KMyNkU/Bt/WcUF4hc=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>Modules/BugBlock.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		gqJEonNjvQySg2wA7YUPe9Jea88=
+		+J3sB0vH+pLjo2Twfv+TVIx0oR4=
 		</data>
 		<key>Modules/BugBlock.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		vvpyswFUsqAjqEgJxhslC4j0xEU=
+		HelqOJAKk5KMyNkU/Bt/WcUF4hc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -146,11 +146,11 @@
 		</data>
 		<key>ScreenshotVC.nib/objects-11.0+.nib</key>
 		<data>
-		CQl0G0qhp1aABF1CUG9gPPdhJwg=
+		KO3EGuWlKISc9rCzGF85EwmCDkA=
 		</data>
 		<key>ScreenshotVC.nib/runtime.nib</key>
 		<data>
-		E1Mgi7slKKgsLIsjMygEcgfFHsM=
+		/ahvY+zgyl6ZHPDtc4YGU4Orohw=
 		</data>
 		<key>StandardTypesMangling.def</key>
 		<data>
@@ -167,22 +167,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J0/PzQ/4OnLEFHcygZUhFxfxAQg=
+			2k98sDFzeZ+4wQE4t4cSqVuirns=
 			</data>
 			<key>hash2</key>
 			<data>
-			IRd/HNhZkyb4tf13l7nyp0dS3eotpz0YEIPnyf1GXhw=
+			ADNtuWTRK6dEQ9B/7fXupiciwGA7BJW95Wb9dA3bcQg=
 			</data>
 		</dict>
 		<key>BugBlock.podspec</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g/x1YH1E3C/kDzTe6TJIMSygRyQ=
+			DFnxdOKwYBRwYOcWyJH2VeL0hPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			0tqD9SjIc7WaGfu/LP8oqJDjGqb3MAJdnEpGvoIGwEc=
+			WSn/fYz4CfwTpvVukWa3vVMbn5z5Bnmj0RMxOQ9uiv4=
 			</data>
 		</dict>
 		<key>DemangleNodes.def</key>
@@ -200,22 +200,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j/HK5nJbOru4ngctyuEUAe5uPmI=
+			ySTHNbT9FOsXBUG6fLHMjSw6gpk=
 			</data>
 			<key>hash2</key>
 			<data>
-			FFZA1HI1fb0w1Bak2okbzjsuUN15uMBzYD4JMfBFSDw=
+			V0NDU8aPfARlYPOcp5AvU+mLNQXsahev12Q20MO1BR0=
 			</data>
 		</dict>
 		<key>DescriptionVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HLQIsvLf5oeTkz8qiVwH0cVJJRY=
+			0uvBNx/js7xrsRZu6qF77LWVYEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			2CHF6Zj+XrLdNVPUcfDsQ4tctSTmnmLt46SsZdlYr+8=
+			1clqb897xSqRQFzS3FYfXoW1QhJWoRTsRXzqIlKQajs=
 			</data>
 		</dict>
 		<key>Headers/BugBlock-Swift.h</key>
@@ -306,7 +306,7 @@
 			vZc+sMrEaaZXal/17tjBVfLv7+lzsRT5i7R1PQ9MgBo=
 			</data>
 		</dict>
-		<key>LICENSE.TXT</key>
+		<key>LICENSE.txt</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -332,22 +332,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pEonGLL5dir3ExUrzv8kNpfCBaM=
+			xGO7GmU/giOGu0py4Go0w1GzwQ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			87Mpn8LundKjl6NAu7N7qO5ERhhF4irwYrnMbk2Hi9E=
+			SOxk6Z1NVbDgsu1M2r5ntRaSkOzU0ho1aJJsZyvzJUo=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M3//BcVIMBROWUEzYP/nbNjWBvQ=
+			YthOBiV5QK0lLrk/JibSHAZT2hQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ozxds/EeGbRBFiGRhKyb/t8tzNZMxFlNLDfl0aJdb7Q=
+			1h5HbPfDOt/6MVOQyujkQZp1NrG9hE8+sBkJJoflPXE=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/arm64.swiftdoc</key>
@@ -365,22 +365,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pEonGLL5dir3ExUrzv8kNpfCBaM=
+			xGO7GmU/giOGu0py4Go0w1GzwQ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			87Mpn8LundKjl6NAu7N7qO5ERhhF4irwYrnMbk2Hi9E=
+			SOxk6Z1NVbDgsu1M2r5ntRaSkOzU0ho1aJJsZyvzJUo=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M3//BcVIMBROWUEzYP/nbNjWBvQ=
+			YthOBiV5QK0lLrk/JibSHAZT2hQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ozxds/EeGbRBFiGRhKyb/t8tzNZMxFlNLDfl0aJdb7Q=
+			1h5HbPfDOt/6MVOQyujkQZp1NrG9hE8+sBkJJoflPXE=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -398,22 +398,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XYwdfu5fpBMSGGsSV/lyA8jZmmY=
+			vhy8a1Z6XbBS/7Ob+g81/oicl2Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			TwtapflQ2SE7QMOdwsNcN9pNujcJi2AD5bf120GzBm0=
+			wgcVA6TNlRMu5sfmFkCvXBBUEgo9MjJs6t84HZcm0HY=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l04nPX97BiDvilFNkkDvE+E6Kf8=
+			h4qWl2MvqlUIdZsMwzn+205zvX8=
 			</data>
 			<key>hash2</key>
 			<data>
-			obGMdF27INjy/p0rIRuvMAQROR0Xn+YlS1kI8bssDyE=
+			chLBoQKgDRX48FK0KVdL6VLNb4yZgxkw8lsmDA3nOYM=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/i386.swiftdoc</key>
@@ -431,22 +431,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XYwdfu5fpBMSGGsSV/lyA8jZmmY=
+			vhy8a1Z6XbBS/7Ob+g81/oicl2Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			TwtapflQ2SE7QMOdwsNcN9pNujcJi2AD5bf120GzBm0=
+			wgcVA6TNlRMu5sfmFkCvXBBUEgo9MjJs6t84HZcm0HY=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l04nPX97BiDvilFNkkDvE+E6Kf8=
+			h4qWl2MvqlUIdZsMwzn+205zvX8=
 			</data>
 			<key>hash2</key>
 			<data>
-			obGMdF27INjy/p0rIRuvMAQROR0Xn+YlS1kI8bssDyE=
+			chLBoQKgDRX48FK0KVdL6VLNb4yZgxkw8lsmDA3nOYM=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -464,22 +464,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gqJEonNjvQySg2wA7YUPe9Jea88=
+			+J3sB0vH+pLjo2Twfv+TVIx0oR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ytgkZNQ/LBlnbmytQ1nRwPSHw/4VKiJD/Ski8WLdw0=
+			zOiMUl2rEOCyAPzlBsOYvnIEGQZ8o0Ic8wh8V4M3v58=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vvpyswFUsqAjqEgJxhslC4j0xEU=
+			HelqOJAKk5KMyNkU/Bt/WcUF4hc=
 			</data>
 			<key>hash2</key>
 			<data>
-			E4bXoHJRna9OqdQ9A+D1b1jxx0lKrDkVBcbi7uoJbv4=
+			TVAsQhbQSA1YDaNZrAHg2UhwsZGNA9MgyFFyIDQe9F0=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/x86_64.swiftdoc</key>
@@ -497,22 +497,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gqJEonNjvQySg2wA7YUPe9Jea88=
+			+J3sB0vH+pLjo2Twfv+TVIx0oR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ytgkZNQ/LBlnbmytQ1nRwPSHw/4VKiJD/Ski8WLdw0=
+			zOiMUl2rEOCyAPzlBsOYvnIEGQZ8o0Ic8wh8V4M3v58=
 			</data>
 		</dict>
 		<key>Modules/BugBlock.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vvpyswFUsqAjqEgJxhslC4j0xEU=
+			HelqOJAKk5KMyNkU/Bt/WcUF4hc=
 			</data>
 			<key>hash2</key>
 			<data>
-			E4bXoHJRna9OqdQ9A+D1b1jxx0lKrDkVBcbi7uoJbv4=
+			TVAsQhbQSA1YDaNZrAHg2UhwsZGNA9MgyFFyIDQe9F0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -541,22 +541,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CQl0G0qhp1aABF1CUG9gPPdhJwg=
+			KO3EGuWlKISc9rCzGF85EwmCDkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ivn7RGfHC25URdyll2GdbksqxRI0Ruc//cf/s5iX+UU=
+			Y1jhRVz1imgBPqhjJzFN35+4zgl6wC5hcwUmSVrkQXY=
 			</data>
 		</dict>
 		<key>ScreenshotVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E1Mgi7slKKgsLIsjMygEcgfFHsM=
+			/ahvY+zgyl6ZHPDtc4YGU4Orohw=
 			</data>
 			<key>hash2</key>
 			<data>
-			4YQgE4amZjsODalDVOdpD6hRMNzu2rCn7IJfypU5lSs=
+			P9O136hL3ugVuuXgT/yuk3k/wVICcSHPFejRdIjTExE=
 			</data>
 		</dict>
 		<key>StandardTypesMangling.def</key>
