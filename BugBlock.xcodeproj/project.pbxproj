@@ -221,6 +221,8 @@
 		CB2A99B326DCB83D00FE10D9 /* DescriptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2A99B226DCB83C00FE10D9 /* DescriptionVC.xib */; };
 		CB2A99B526DCB84500FE10D9 /* ScreenshotVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2A99B426DCB84500FE10D9 /* ScreenshotVC.xib */; };
 		CB2A99B726DCB86600FE10D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2A99B626DCB86600FE10D9 /* Assets.xcassets */; };
+		CBA8CCB027288B1C00542675 /* MetadataReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA8CCAF27288B1C00542675 /* MetadataReporter.swift */; };
+		CBA8CCB227288CC400542675 /* MetadataData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA8CCB127288CC400542675 /* MetadataData.swift */; };
 		CBE1292826DD755300F57773 /* BugBlock.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CBE1292726DD755300F57773 /* BugBlock.podspec */; };
 		CBEBD22C26E6A10B00D768E0 /* UIDevice+Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBD22B26E6A10B00D768E0 /* UIDevice+Device.swift */; };
 		CBEBD22E26E6A60000D768E0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEBD22D26E6A60000D768E0 /* String.swift */; };
@@ -454,6 +456,8 @@
 		CB2A99B226DCB83C00FE10D9 /* DescriptionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionVC.xib; sourceTree = "<group>"; };
 		CB2A99B426DCB84500FE10D9 /* ScreenshotVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenshotVC.xib; sourceTree = "<group>"; };
 		CB2A99B626DCB86600FE10D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBA8CCAF27288B1C00542675 /* MetadataReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataReporter.swift; sourceTree = "<group>"; };
+		CBA8CCB127288CC400542675 /* MetadataData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataData.swift; sourceTree = "<group>"; };
 		CBE1292726DD755300F57773 /* BugBlock.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BugBlock.podspec; sourceTree = "<group>"; };
 		CBEBD22B26E6A10B00D768E0 /* UIDevice+Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Device.swift"; sourceTree = "<group>"; };
 		CBEBD22D26E6A60000D768E0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -546,6 +550,7 @@
 			children = (
 				CB2A97ED26DC238700FE10D9 /* BugReporter.swift */,
 				CB2A97EE26DC238700FE10D9 /* CrashReporter.swift */,
+				CBA8CCAF27288B1C00542675 /* MetadataReporter.swift */,
 			);
 			path = Reporters;
 			sourceTree = "<group>";
@@ -643,6 +648,7 @@
 				CB2A980A26DC238800FE10D9 /* NetworkData.swift */,
 				CB2A980B26DC238800FE10D9 /* Issue.swift */,
 				CB2A980C26DC238800FE10D9 /* CrashData.swift */,
+				CBA8CCB127288CC400542675 /* MetadataData.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -1251,6 +1257,7 @@
 				CB2A98E126DC238800FE10D9 /* Configuration.swift in Sources */,
 				CB2A98EF26DC238800FE10D9 /* NSData+KSGZip.m in Sources */,
 				CB2A98E426DC238800FE10D9 /* UIWindow+Window.swift in Sources */,
+				CBA8CCB027288B1C00542675 /* MetadataReporter.swift in Sources */,
 				CB2A98E626DC238800FE10D9 /* ScreenshotHandler.swift in Sources */,
 				CB2A994F26DC238800FE10D9 /* KSCPU_x86_64.c in Sources */,
 				CB2A98DD26DC238800FE10D9 /* DataTask.swift in Sources */,
@@ -1266,6 +1273,7 @@
 				CB2A995226DC238800FE10D9 /* KSLogger.c in Sources */,
 				CB2A999326DC238800FE10D9 /* OldDemangler.cpp in Sources */,
 				CB2A993926DC238800FE10D9 /* KSCPU_arm.c in Sources */,
+				CBA8CCB227288CC400542675 /* MetadataData.swift in Sources */,
 				CB2A995926DC238800FE10D9 /* KSStackCursor_SelfThread.c in Sources */,
 				CB2A998226DC238800FE10D9 /* KSCrashInstallation.m in Sources */,
 				CB2A992626DC238800FE10D9 /* KSCrashMonitor.c in Sources */,
@@ -1437,7 +1445,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1451,7 +1459,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.5;
+				MARKETING_VERSION = 0.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.bug-block.BugBlock";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1471,7 +1479,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1486,7 +1494,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.5;
+				MARKETING_VERSION = 0.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.bug-block.BugBlock";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

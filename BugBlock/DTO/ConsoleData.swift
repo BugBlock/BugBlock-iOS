@@ -18,7 +18,7 @@ struct ConsoleData: Codable {
     
     enum CodingKeys: String, CodingKey {
         case timestamp = "timestamp"
-        case string = "string"
+        case string = "message"
         case logLevel = "log_level"
     }
 }

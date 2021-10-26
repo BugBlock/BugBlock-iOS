@@ -20,6 +20,7 @@ public class Logger: LoggerProtocol {
     private var crashLogger: CrashLoggerProtocol?
     private var crashReporter: CrashReporterProtocol?
     private var bugReporter: BugReporterProtocol?
+    private var metadataReporter: MetadataReporterProtocol?
     
     private var listener: ScreenshotListenerProtocol?
     private var handler: ScreenshotHandler?
@@ -32,7 +33,7 @@ public class Logger: LoggerProtocol {
         }
         if configuration.serverLoggingEnabled {
             self.storage = LogStorage()
-            self.apiService = ApiService()
+            self.apiService = ApiService(appId: appId)
         }
         if configuration.crashReportingEnabled {
             self.crashLogger = CrashLogger()
@@ -41,10 +42,13 @@ public class Logger: LoggerProtocol {
             crashReporter.registerHandler()
         }
         self.bugReporter = BugReporter(apiService: apiService, storage: storage)
+        self.metadataReporter = MetadataReporter(apiService: apiService)
         
         self.handler = ScreenshotHandler(reporter: bugReporter!)
         self.listener = ScreenshotListener(handler: handler!)
         self.listener?.startListen()
+        
+        self.metadataReporter?.report()
     }
     
     func log<T: Codable>(data: T) {

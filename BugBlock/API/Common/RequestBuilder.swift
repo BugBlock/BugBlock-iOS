@@ -17,11 +17,17 @@ class RequestBuilder<T: Codable> {
     private let body: T?
     private let method: String
     private let encoder = JSONEncoder()
+    private let appId: String
     
-    init(url: String, body: T?, method: String = "GET") {
+    init(appId: String, url: String, body: T?, method: String = "GET") {
+        self.appId = appId
         self.url = url
         self.body = body
         self.method = method
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        self.encoder.dateEncodingStrategy = .formatted(dateFormatter)
+        self.encoder.outputFormatting = .prettyPrinted
     }
     
     func build() throws -> URLRequest {
@@ -30,6 +36,7 @@ class RequestBuilder<T: Codable> {
         }
         var request = URLRequest(url: url)
         request.httpMethod = method
+        request.setValue(appId, forHTTPHeaderField: "AppId")
         if method == "POST" || method == "PUT" ||  method == "PATCH" {
             request.httpBody = try encoder.encode(body)
         }
@@ -48,6 +55,7 @@ class RequestBuilder<T: Codable> {
         
         let boundary = UUID().uuidString
         
+        request.setValue(appId, forHTTPHeaderField: "AppId")
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
         var data = Data()
@@ -64,5 +72,9 @@ class RequestBuilder<T: Codable> {
         request.httpBody = data
         
         return request
+    }
+    
+    func set(appId: String) {
+        
     }
 }
