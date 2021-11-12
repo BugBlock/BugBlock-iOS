@@ -31,7 +31,7 @@
                                 <constraint firstAttribute="height" constant="50" id="GTs-RD-pDP"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSt-Jm-gjv">
                             <rect key="frame" x="0.0" y="50" width="390" height="1"/>

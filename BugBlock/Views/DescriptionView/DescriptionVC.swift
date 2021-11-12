@@ -40,7 +40,7 @@ class DescriptionVC: UIViewController {
         let reset = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(closeKeyboard))
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
             
-        bar.items = [flexibleSpace, reset]
+//        bar.items = [flexibleSpace, reset]
         bar.sizeToFit()
         descriptionTextView.inputAccessoryView = bar
         descriptionTextView.contentInset = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 3)
