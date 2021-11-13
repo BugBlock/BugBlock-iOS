@@ -1,5 +1,5 @@
 # Quick start
-BugBlock iOS SDK is providing you with the ability to get quick bug reports from users with network and custom console logs and an automatic crash reporting tool. To start you need to get an SDK token in our [dashbord.bugblock.io](https://dashboard.bugblock.io "dashboard.bugblock.io")
+BugBlock iOS SDK is providing you with the ability to get quick bug reports from users with network and custom console logs and an automatic crash reporting tool. To start you need to get an SDK token in our [dashboard.bugblock.io](https://dashboard.bugblock.io "dashboard.bugblock.io")
 
 
 BugBlock iOS SDK is available for at:
