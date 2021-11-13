@@ -35,7 +35,7 @@ There are two ways to get it:
 
 ## First start
 
-After importing an SDK you need to import project in your AppDelegate:
+After importing an SDK you need to import the project in your AppDelegate:
 ```swift
 import BugBlock
 ```
@@ -48,3 +48,67 @@ BBLog.start(appId: "Your SDK token", configuration: config)
 
 You're done.
 
+
+
+# Configurations
+
+Once you are already done with the initial setup. Let's go through some tips that may help you configure SDK to your needs.
+
+Before starting SDK we need to create configuration. Struct `BBConfiguration` is responsible for the SDK configuration. All properties are `false` by default. If you need to enable something just pass true to respective property. Here is full list of possible properties:
+
+```swift
+var config = BBConfiguration()
+config.consoleLoggingEnabled = false
+config.serverLoggingEnabled = true
+config.crashReportingEnabled = true
+config.invokeByScreenshot = true
+config.invokeByShake = true
+```
+
+All are self-describing but one is special it's `serverLoggingEnabled` it should be used with network configuration only, otherwise, it will not take any effect.
+
+## Network configuration
+
+To set up network request and response logging you need to pass the `URLSessionConfiguration` instance to the SDK:
+```swift
+let conf = URLSessionConfiguration.default
+BBLog.networkLogging(with: conf)
+let session = URLSession(configuration: conf)
+```
+
+Keep in mind, to handle all network logs you need to use the `session` that you created above.
+
+
+## Console logging
+
+To prevent you from reading long lists of console logs produced by the iOS application. You can pass only the logs you need. It's pretty easy to make a custom console log: 
+
+```swift
+BBLog.consoleLog(string: "Error description", logLevel: .error)
+```
+
+To make it easy to differentiate log by level we've created those levels:
+
+`debug`, 
+`info`, 
+`warning`, 
+`error`
+
+
+## User identity
+
+If you want to identify a user when he reports an issue it will be easier to do with the user identity feature. There is two function that can help you to recognize a user in the report: 
+
+```swift
+BBLog.user(name: "Test name")
+BBLog.user(email: "info@example.com")
+```
+
+
+## Silent reports 
+
+By using this feature you can also send a silent report with user acknowledgment
+
+```swift
+BBLog.report()
+```
