@@ -16,6 +16,6 @@ class LogConsole: LogConsoleProtocol {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         let encodedData = try! encoder.encode(data)
-        print(String(data: encodedData, encoding: .utf8)!)
+        //print(String(data: encodedData, encoding: .utf8)!)
     }
 }
