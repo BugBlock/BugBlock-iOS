@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -47,24 +47,24 @@
                             </constraints>
                         </view>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sYb-8a-8AB">
-                            <rect key="frame" x="0.0" y="61" width="390" height="150"/>
+                            <rect key="frame" x="0.0" y="61" width="390" height="200"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="150" id="27F-r9-5sN"/>
+                                <constraint firstAttribute="height" constant="200" id="27F-r9-5sN"/>
                             </constraints>
                             <color key="textColor" systemColor="labelColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koR-up-wuz">
-                            <rect key="frame" x="0.0" y="211" width="390" height="1"/>
+                            <rect key="frame" x="0.0" y="261" width="390" height="1"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="965-2M-3xI"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Nk-d6-PGO">
-                            <rect key="frame" x="0.0" y="212" width="390" height="100"/>
+                            <rect key="frame" x="0.0" y="262" width="390" height="100"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bSp-cC-8fk">
                                     <rect key="frame" x="8" y="15" width="70" height="70"/>
@@ -87,34 +87,15 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjr-I1-fZ4">
-                            <rect key="frame" x="0.0" y="312" width="390" height="1"/>
+                            <rect key="frame" x="0.0" y="362" width="390" height="1"/>
                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="iYn-N0-OqD"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7F-Tx-fXO">
-                            <rect key="frame" x="0.0" y="313" width="390" height="453"/>
+                            <rect key="frame" x="0.0" y="363" width="390" height="403"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJu-Mx-r53">
-                                    <rect key="frame" x="58.666666666666657" y="370" width="273" height="50"/>
-                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="f3E-7v-xtm"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <state key="normal" title="Send report">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="5"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="send:" destination="-1" eventType="touchUpInside" id="OKg-F9-TPm"/>
-                                    </connections>
-                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To help us to fix a bug, this report will include a screenshot." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-cP-pOj">
                                     <rect key="frame" x="8" y="8" width="374" height="55"/>
                                     <constraints>
@@ -127,10 +108,7 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="RJu-Mx-r53" secondAttribute="bottom" constant="33" id="J4v-jt-UwL"/>
-                                <constraint firstItem="RJu-Mx-r53" firstAttribute="centerX" secondItem="C7F-Tx-fXO" secondAttribute="centerX" id="QLv-VD-PTH"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="XcG-tg-VQ2"/>
-                                <constraint firstItem="RJu-Mx-r53" firstAttribute="width" secondItem="C7F-Tx-fXO" secondAttribute="width" multiplier="0.7" id="fbt-La-x7I"/>
                                 <constraint firstItem="Ssf-cP-pOj" firstAttribute="leading" secondItem="C7F-Tx-fXO" secondAttribute="leading" constant="8" id="i6N-z9-4GZ"/>
                                 <constraint firstAttribute="trailing" secondItem="Ssf-cP-pOj" secondAttribute="trailing" constant="8" id="p5F-s8-9KZ"/>
                                 <constraint firstItem="Ssf-cP-pOj" firstAttribute="top" secondItem="C7F-Tx-fXO" secondAttribute="top" constant="8" id="tda-z0-57e"/>
@@ -156,9 +134,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

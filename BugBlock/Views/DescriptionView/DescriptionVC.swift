@@ -20,10 +20,22 @@ class DescriptionVC: UIViewController {
         super.init(nibName: "DescriptionVC", bundle: Bundle(for: DescriptionVC.self))
         self.reporter.delegate = self
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Send report", style: .plain, target: self, action: #selector(sendReport))
     }
     
     @objc func cancel() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func sendReport() {
+        self.emailTextField.layer.borderWidth = 0
+        guard let email = self.emailTextField.text, email.isValidEmail() else {
+            self.emailTextField.layer.borderWidth = 1
+            self.emailTextField.layer.borderColor = UIColor.systemRed.cgColor
+            return
+        }
+        UserDefaults.standard.setValue(self.emailTextField.text, forKey: UserDefaultsKeys.userEmail.rawValue)
+        self.reporter.report(email: email, description: self.descriptionTextView.text, image: image)
     }
     
     required init?(coder: NSCoder) {
@@ -56,17 +68,6 @@ class DescriptionVC: UIViewController {
 
     @objc func closeKeyboard() {
         self.view.endEditing(true)
-    }
-
-    @IBAction func send(_ sender: Any) {
-        self.emailTextField.layer.borderWidth = 0
-        guard let email = self.emailTextField.text, email.isValidEmail() else {
-            self.emailTextField.layer.borderWidth = 1
-            self.emailTextField.layer.borderColor = UIColor.systemRed.cgColor
-            return
-        }
-        UserDefaults.standard.setValue(self.emailTextField.text, forKey: UserDefaultsKeys.userEmail.rawValue)
-        self.reporter.report(email: email, description: self.descriptionTextView.text, image: image)
     }
 }
 
