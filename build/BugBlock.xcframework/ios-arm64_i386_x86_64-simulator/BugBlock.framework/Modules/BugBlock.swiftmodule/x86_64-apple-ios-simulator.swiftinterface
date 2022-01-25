@@ -10,6 +10,7 @@ import UIKit
 import _Concurrency
 @_hasMissingDesignatedInitializers public class BBLog {
   public class func start(appId: Swift.String, configuration: BugBlock.BBConfiguration)
+  public class func stop()
   public class func user(uuid: Swift.String)
   public class func user(email: Swift.String)
   public class func user(name: Swift.String)

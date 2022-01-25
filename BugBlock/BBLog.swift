@@ -14,7 +14,10 @@ public class BBLog {
     public class func start(appId: String, configuration: BBConfiguration) {
         self.appId = appId
         self.logger = Logger(appId: appId, configuration: configuration)
-        
+    }
+    
+    public class func stop() {
+        self.logger = nil
     }
     
     public class func user(uuid: String) {
