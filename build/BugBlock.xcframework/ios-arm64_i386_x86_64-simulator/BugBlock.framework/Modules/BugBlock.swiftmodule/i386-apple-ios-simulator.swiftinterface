@@ -26,6 +26,7 @@ public struct BBConfiguration {
   public var crashReportingEnabled: Swift.Bool
   public var invokeByScreenshot: Swift.Bool
   public var invokeByShake: Swift.Bool
+  public var printNetworkRequests: Swift.Bool
 }
 public enum ConsoleLogLevel : Swift.String, Swift.Codable {
   case debug, info, warning, error

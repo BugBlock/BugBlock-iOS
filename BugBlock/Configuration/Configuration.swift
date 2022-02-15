@@ -16,4 +16,5 @@ public struct BBConfiguration {
     public var crashReportingEnabled: Bool = false
     public var invokeByScreenshot: Bool = false
     public var invokeByShake: Bool = false
+    public var printNetworkRequests: Bool = false
 }

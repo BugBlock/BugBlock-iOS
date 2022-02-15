@@ -25,8 +25,10 @@ public class Logger: LoggerProtocol {
     private var listener: ScreenshotListenerProtocol?
     private var handler: ScreenshotHandler?
     private var appId: String?
+    private var configuration: BBConfiguration
     
     required init(appId: String, configuration: BBConfiguration) {
+        self.configuration = configuration
         self.appId = appId
         if configuration.consoleLoggingEnabled {
             self.console = LogConsole()
@@ -53,7 +55,9 @@ public class Logger: LoggerProtocol {
     
     func log<T: Codable>(data: T) {
         storage?.append(data: data)
-        console?.printFormatted(data: data)
+        if configuration.printNetworkRequests {
+            console?.printFormatted(data: data)
+        }
     }
     
     func report() {
